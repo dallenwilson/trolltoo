@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+<repo priority="10" status="unofficial">
+	<name>trolltoo</name>
+	<description>dwilson's ebuilds</description>
+	<homepage>https://github.com/dallenwilson/trolltoo</homepage>
+	<owner type="person">
+		<email>dallen.wilson@gmail.com</email>
+		<name>Dallen Wilson</name>
+	</owner>
+	<source type="git">git://github.com/dallenwilson/trolltoo.git</source>
+	<feed>https://github.com/dallewilson/trolltoo/commits/master.atom</feed>
+</repo>
+</repositories>
