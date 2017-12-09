@@ -5,7 +5,7 @@ EAPI=6
 
 PARTS_P="${PN}-parts-${PV}"
 
-inherit qmake-utils eutils
+inherit qmake-utils eutils xdg-utils
 
 DESCRIPTION="Electronic Design Automation"
 HOMEPAGE="http://fritzing.org/"
@@ -48,10 +48,12 @@ src_prepare() {
 	# https://code.google.com/p/fritzing/issues/detail?id=1898
 	rm -rf src/lib/quazip/ pri/quazip.pri src/lib/boost* || die
 
-	# Look for libgit2 at proper locations
+	# Fritzing expects libgit2 to be at "../libgit2/".
+	# Remove that check and use standard system locations.
 	epatch "${FILESDIR}/${PV}-remove-libgit2-checks.patch"
 
-	# Remove check for bad boost version
+	# Fritzing checks for a 'bad' version of Boost (1.54), using Debian-specific methods (dpkg).
+	# Remove that check, ebuild requires >=1.55 to handle that problem.
 	epatch "${FILESDIR}/${PV}-remove-bad-boost-check.patch"
 
 	# Fritzing doesn't need zlib
@@ -68,9 +70,11 @@ src_prepare() {
 		sed -i -e "s:translations.extra = .*:\r:" phoenix.pro || die
 	fi
 
-	# Fix missing Intel bin icon
-	# https://github.com/fritzing/fritzing-parts/commit/716560e9
-	#sed -i -e 's:Intel.png:intel.png:' bins/more/intel.fzb || die
+	# Not sure if Fritzing bug, compile-screwup here in ebuild, or intentional
+	# but Fritzing looks for it's parts in whatever directory you launch it from,
+	# ignoring -f path/to/parts option completely. Add start-script and patch
+	# desktop entry to use it.
+	epatch "${FILESDIR}/${PV}-add-start-script.patch"
 
 	default
 }
@@ -84,4 +88,19 @@ src_install() {
 
 	insinto /usr/share/fritzing/parts
 	doins -r "${WORKDIR}/${PARTS_P}"/*
+
+	# Install new launch script
+	exeinto /usr/bin
+	doexe "$S/fritzing.sh"
+}
+
+pkg_postinst() {
+	# The QA Notice told me to
+	xdg_desktop_database_update
+
+}
+
+pkg_postrm() {
+	# The QA Notice told me to
+	xdg_desktop_database_update
 }
