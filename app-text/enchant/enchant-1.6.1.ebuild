@@ -34,7 +34,6 @@ DEPEND="${COMMON_DEPENDS}
 DOCS="AUTHORS BUGS ChangeLog HACKING MAINTAINERS NEWS README TODO"
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-1.6.0-hunspell150_fix.patch
 	"${FILESDIR}"/libtool-tag-fix.patch
 )
 
