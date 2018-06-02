@@ -1,0 +1,31 @@
+--- hot-babe-0.2.2/Makefile.orig	2014-02-12 22:01:22.940578253 +0100
++++ hot-babe-0.2.2/Makefile	2014-02-12 22:09:13.810909003 +0100
+@@ -1,5 +1,5 @@
+ # where to install this program
+-PREFIX := /usr/local
++PREFIX := /usr
+ VERSION := 0.2.2
+ 
+ # optimization cflags
+@@ -9,7 +9,7 @@
+ CC = gcc
+ LIBS = `pkg-config gdk-2.0 gdk-pixbuf-2.0  --libs`
+ 
+-DOC = ChangeLog NEWS TODO LICENSE CONTRIBUTORS copyright config.example
++DOC = ChangeLog NEWS TODO CONTRIBUTORS config.example
+ 
+ all: hot-babe
+ 
+@@ -24,10 +24,8 @@
+ 	install -m 0755 hot-babe $(DESTDIR)$(PREFIX)/bin
+ 	install -d $(DESTDIR)$(PREFIX)/share/hot-babe/hb01
+ 	install -m 0644 hb01/* $(DESTDIR)$(PREFIX)/share/hot-babe/hb01
+-	install -d $(DESTDIR)$(PREFIX)/share/doc/hot-babe
+-	install -m 0644 $(DOC) $(DESTDIR)$(PREFIX)/share/doc/hot-babe
+-	install -d $(DESTDIR)$(PREFIX)/share/man/man1
+-	install -m 0644 hot-babe.1 $(DESTDIR)$(PREFIX)/share/man/man1
++	install -d $(DESTDIR)$(PREFIX)/share/doc/hot-babe-$(VERSION)
++	install -m 0644 $(DOC) $(DESTDIR)$(PREFIX)/share/doc/hot-babe-$(VERSION)
+ 	install -d $(DESTDIR)$(PREFIX)/share/pixmaps
+ 	install -m 0644 hot-babe.xpm $(DESTDIR)$(PREFIX)/share/pixmaps
+ 
