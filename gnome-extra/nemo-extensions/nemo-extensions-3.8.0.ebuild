@@ -20,7 +20,7 @@ KEYWORDS="~amd64"
 IUSE="fileroller compare dropbox foldercolor gtkhash imageconverter mediacolumns pastebin preview -python rabbitvcs repairer seahorse share terminal"
 MODULES=${IUSE//-/}
 
-DEPEND="( =gnome-extra/nemo-2* )
+DEPEND="( =gnome-extra/nemo-3* )
 		fileroller? ( app-arch/file-roller )"
 
 RDEPEND="${DEPEND}"
