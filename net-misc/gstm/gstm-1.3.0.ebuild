@@ -18,7 +18,7 @@ DEPEND="
 	"
 RDEPEND="
 	${DEPEND}
-	net-mist/openssh
+	net-misc/openssh
 	"
 BDEPEND=""
 
