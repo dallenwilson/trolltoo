@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -79,7 +79,7 @@ src_prepare() {
 	# ignoring -f path/to/parts option completely. Add start-script and patch
 	# desktop entry to use it.
 	epatch "${FILESDIR}/${PV}-add-start-script.patch"
-	
+
 	default
 }
 

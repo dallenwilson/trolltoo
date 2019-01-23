@@ -1,11 +1,11 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 WANT_AUTOCONF="2.1"
 PYTHON_COMPAT=( python2_7 )
 PYTHON_REQ_USE="threads"
-inherit autotools toolchain-funcs multilib python-any-r1 versionator pax-utils
+inherit autotools toolchain-funcs multilib python-any-r1 pax-utils
 
 MY_PN="mozjs"
 MY_P="${MY_PN}-${PV/_/.}"

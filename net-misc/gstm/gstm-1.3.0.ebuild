@@ -21,4 +21,3 @@ RDEPEND="
 	net-misc/openssh
 	"
 BDEPEND=""
-

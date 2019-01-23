@@ -1,17 +1,17 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
 EAPI=5
 
 inherit autotools
 
 DESCRIPTION="extensions for cinnamon's file-manager nemo"
-HOMEPAGE=""
+HOMEPAGE="https://github.com/linuxmint/nemo-extensions"
 SRC_URI="https://github.com/linuxmint/nemo-extensions/archive/${PV}.zip -> ${P}.zip"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
+LICENSE="GPL-2"
 
 #IUSE="dropbox fileroller seahorse share pastebin compare -python rabbitvcs -terminal gtkhash filenamerepairer imageconverter audiotab"
 #REQUIRED_USE="terminal? ( python )"
@@ -27,7 +27,7 @@ RDEPEND="${DEPEND}"
 
 src_unpack() {
 	unpack ${A}
-    cd "${S}"
+	cd "${S}"
 }
 
 src_prepare () {
@@ -78,7 +78,7 @@ src_install () {
 			pushd nemo-${module}
 			emake DESTDIR="${D}" install
 			elog "Removing .a and .la files"
-			find ${D} -name "*.a" -exec rm {} + -o -name "*.la" -exec rm {} + || die
+			find "${D}" -name "*.a" -exec rm {} + -o -name "*.la" -exec rm {} + || die
 			dodoc README
 			popd
 		fi
