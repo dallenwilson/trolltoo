@@ -9,5 +9,5 @@ Lastly are the ebuilds I wrote myself, software I needed for which gentoo packag
 - RealTek 8821ce wifi/bluetooth kernel driver, using the fine work of tomaspinho (https://github.com/tomaspinho/rtl8821ce) which targets Arch and Ubuntu but works perfectly fine for Gentoo as well.
 - Gnome SSH Tunnel Manager, updated for Gtk3 and maintained by myself at https://github.com/dallenwilson/gstm
 
-To add with Layman:
-you@yourprompthere # layman -o https://raw.githubusercontent.com/dallenwilson/trolltoo/master/overlay.xml -f -a trolltoo
+This overlay is in the Layman listing. To add with Layman:
+you@yourprompthere # layman -a trolltoo
