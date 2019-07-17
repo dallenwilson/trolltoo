@@ -1,0 +1,5 @@
+The Minecraft server software is proprietary, and will refuse to run until you
+edit a file in the server's data directory indicating you've agreed to their
+EULA. The current URL to that document, valid at the time of this writing, is:
+
+    https://account.mojang.com/documents/minecraft_eula
