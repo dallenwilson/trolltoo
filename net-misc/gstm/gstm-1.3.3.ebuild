@@ -18,7 +18,6 @@ DEPEND="
 	>=dev-util/intltool-0.35.0
 	"
 RDEPEND="
-	${DEPEND}
 	net-misc/openssh
 	"
 BDEPEND=""
