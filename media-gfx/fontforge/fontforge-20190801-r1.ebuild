@@ -14,7 +14,7 @@ SRC_URI="https://github.com/fontforge/fontforge/releases/download/${PV}/fontforg
 LICENSE="BSD GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="cairo truetype-debugger gif gtk jpeg png +python readline test tiff svg unicode X woff2 spiro"
+IUSE="iconv debug cairo truetype-debugger gif gtk jpeg png +python readline test tiff svg unicode X woff2 spiro"
 
 RESTRICT="!test? ( test )"
 
@@ -67,6 +67,7 @@ pkg_setup() {
 src_configure() {
 	local myeconfargs=(
 		--disable-static
+		--enable-fontforge-extras
 		$(use_enable truetype-debugger freetype-debugger "${EPREFIX}/usr/include/freetype2/internal4fontforge")
 		$(use_enable python python-extension)
 		$(use_enable python python-scripting)
@@ -81,6 +82,8 @@ src_configure() {
 		$(use_with unicode libuninameslist)
 		$(use_with X x)
 		$(use_enable woff2 woff2)
+		$(use_with iconv iconv)
+		$(use_enable debug debug)
 	)
 	if use gtk; then
 		# broken AC_ARG_ENABLE usage
