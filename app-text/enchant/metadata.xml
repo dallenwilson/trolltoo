@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer type="project">
-		<email>gnome@gentoo.org</email>
-		<name>Gentoo GNOME Desktop</name>
+	<maintainer type="person">
+		<email>dwjwilson@lavabit.com</email>
+		<name>Dallen Wilson</name>
 	</maintainer>
 	<use>
 		<flag name="aspell">Adds support for <pkg>app-text/aspell</pkg> spell checker</flag>
