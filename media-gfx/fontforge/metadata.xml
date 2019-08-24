@@ -8,5 +8,6 @@
 	<use>
 		<flag name="woff2">Add support for WOFF2 font format using <pkg>media-libs/woff2</pkg>.</flag>
 		<flag name="spiro">Add support for <pkg>media-libs/libspiro</pkg>, which allows drawing with clothoid splines.</flag>
+		<flag name="truetype-debugger">Add support for debugging truetype fonts using <pkg>media-libs/freetype</pkg>.</flag>
 	</use>
 </pkgmetadata>
