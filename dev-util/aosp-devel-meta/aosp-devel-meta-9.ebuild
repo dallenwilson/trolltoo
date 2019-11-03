@@ -35,7 +35,7 @@ RDEPEND="
 	net-misc/rsync
 	sys-devel/bc
 	sys-devel/gcc[cxx]
-	multilib? ( sys-libs/ncurses:5[abi_x86_32] )
+	multilib? ( sys-libs/ncurses[abi_x86_32] )
 	multilib? ( sys-libs/readline[abi_x86_32] )
 	multilib? ( sys-libs/zlib[abi_x86_32] )
 	sys-process/schedtool
