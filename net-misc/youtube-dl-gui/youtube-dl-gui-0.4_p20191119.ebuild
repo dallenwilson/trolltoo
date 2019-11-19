@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python2_7 )
 
 inherit distutils-r1
 
-GIT_REV="fa3de1d98cbf419c289c8e205943d54f82e6e02a"
+GIT_REV="4d473d9751c4c91e67edbd6d3713104f169516c6"
 
 DESCRIPTION="A cross platform front-end GUI of the popular youtube-dl written in wxPython"
 HOMEPAGE="https://github.com/MrS0m30n3/youtube-dl-gui"
