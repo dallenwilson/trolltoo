@@ -1,0 +1,11 @@
+--- rtl8821ce-*/Makefile.old	2019-11-21 11:05:23.056950482 -0700
++++ rtl8821ce-*/Makefile	2019-11-21 11:05:59.488949994 -0700
+@@ -1218,7 +1218,7 @@
+ SUBARCH := $(shell uname -m | sed -e s/i.86/i386/)
+ ARCH ?= $(SUBARCH)
+ CROSS_COMPILE ?=
+-KVER  := $(shell uname -r)
++KVER  := ${KVER}
+ KSRC := /lib/modules/$(KVER)/build
+ MODDESTDIR := /lib/modules/$(KVER)/kernel/drivers/net/wireless/
+ INSTALL_PREFIX :=
