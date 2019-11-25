@@ -3,7 +3,7 @@
 
 EAPI=7
 
-COMMIT="e82c24595139a44187b84278282af582c222839a"
+COMMIT="e44ecd72a6bef4f333f5f425aff79b5d166d5d24"
 
 DESCRIPTION="D. Wilson's collection of bash scripts for managing his Gentoo system's"
 HOMEPAGE="https://github.com/dallenwilson/emtools"
@@ -14,7 +14,12 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 IUSE=""
 
-DEPEND=""
+DEPEND="
+	app-portage/layman
+	sys-kernel/genkernel
+	app-portage/eix
+	sys-boot/grub
+	"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
