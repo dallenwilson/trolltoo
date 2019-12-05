@@ -1,11 +1,11 @@
 # Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 PYTHON_COMPAT=( python2_7 )
 
-inherit distutils-r1
+inherit distutils-r1 xdg-utils
 
 GIT_REV="4d473d9751c4c91e67edbd6d3713104f169516c6"
 
@@ -22,7 +22,16 @@ IUSE="ffmpeg"
 RDEPEND="${PYTHON_DEPS}
 	dev-python/wxpython:*[${PYTHON_USEDEP}]
 	net-misc/youtube-dl
-	ffmpeg? ( media-video/ffmpeg )"
+	ffmpeg? ( media-video/ffmpeg )
+	dev-python/twodict"
 DEPEND="${RDEPEND}"
 
 S="${WORKDIR}/MrS0m30n3-${PN}-${GIT_REV:0:7}"
+
+pkg_postinst() {
+	xdg_icon_cache_update
+}
+
+pkg_postrm() {
+	xdg_icon_cache_update
+}
