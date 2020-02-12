@@ -1,4 +1,4 @@
-# Copyright 2019 Gentoo Authors
+# Copyright 2019-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # Based on games-action/minecraft-1.6.91.ebuild from layman overlay flussence
@@ -51,7 +51,7 @@ src_install() {
 
 	doicon -s 192 "${DISTDIR}"/minecraft-launcher.png
 
-	dosym "${ED%/}/opt/minecraft-launcher/minecraft-launcher" "/usr/bin/minecraft-launcher"
+	dosym "../../opt/minecraft-launcher/minecraft-launcher" "/usr/bin/minecraft-launcher"
 	make_desktop_entry minecraft-launcher Minecraft minecraft-launcher Game
 }
 

@@ -1,12 +1,12 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 WX_GTK_VER=3.0-gtk3
 
-inherit autotools desktop eapi7-ver gnome2-utils linux-info user wxwidgets
-
+inherit autotools desktop gnome2-utils linux-info wxwidgets
+# user
 MY_PV=$(ver_cut 1-2)
 
 DESCRIPTION="The Berkeley Open Infrastructure for Network Computing"

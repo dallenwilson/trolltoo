@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
@@ -84,8 +84,7 @@ src_install() {
 				newexe 3dm2u.x86 3dm2
 				;;
 		esac
-		dosym "${ED%/}"/opt/3ware/3DM2/3dm2 /usr/sbin/3dm2
-		#ED: Shorthand for ${D%/}${EPREFIX}/.
+		dosym "../../opt/3ware/3DM2/3dm2" "/usr/sbin/3dm2"
 
 		tar -xzpf tdm2Msg.tgz -C "${ED}"/opt/3ware/3DM2/msg
 		tar -xzpf tdm2Help.tgz -C "${ED}"/opt/3ware/3DM2/help

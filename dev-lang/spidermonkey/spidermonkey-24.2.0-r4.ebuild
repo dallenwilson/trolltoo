@@ -1,4 +1,4 @@
-# Copyright 1999-2019 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -16,7 +16,7 @@ SRC_URI="https://archive.mozilla.org/pub/js/${MY_P}.tar.bz2
 
 LICENSE="NPL-1.1"
 SLOT="24"
-KEYWORDS="alpha amd64 arm ~hppa ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc x86"
+KEYWORDS="amd64 arm ~hppa ia64 ~mips ppc ppc64 ~s390 ~sh ~sparc x86"
 IUSE="debug icu jit minimal static-libs +system-icu test"
 
 RESTRICT="ia64? ( test )"
