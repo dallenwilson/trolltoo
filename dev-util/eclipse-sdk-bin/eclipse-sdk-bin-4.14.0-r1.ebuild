@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit eutils
+inherit eutils desktop
 
 SR="R"
 RNAME="2019-12"
@@ -42,5 +42,5 @@ src_install() {
 	newins "${T}"/eclipserc-bin-${SLOT} eclipserc-bin-${SLOT}
 
 	newbin "${T}"/eclipse-bin-${SLOT} eclipse-bin-${SLOT}
-	make_desktop_entry "eclipse-bin-${SLOT}" "Eclipse ${PV} (bin)" "${dest}/icon.xpm"
+	make_desktop_entry "eclipse-bin-${SLOT}" "Eclipse ${PV} (bin)" "${dest}/icon.xpm" "Development"
 }
