@@ -19,5 +19,6 @@ DEPEND="
 	"
 RDEPEND="
 	net-misc/openssh
+	sys-apps/util-linux
 	"
 BDEPEND=""
