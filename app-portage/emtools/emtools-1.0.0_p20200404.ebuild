@@ -3,9 +3,9 @@
 
 EAPI=7
 
-COMMIT="f18cfae48d3950bee75c77601b5a942fafcba66a"
+COMMIT="f44a761e1fa1ab2603bc9de845cb80d32170484d"
 
-DESCRIPTION="D. Wilson's collection of bash scripts for managing his Gentoo system's"
+DESCRIPTION="D. Wilson's collection of bash scripts for managing his Gentoo system(s)"
 HOMEPAGE="https://github.com/dallenwilson/emtools"
 SRC_URI="https://github.com/dallenwilson/emtools/archive/${COMMIT}.tar.gz"
 
