@@ -1,0 +1,11 @@
+--- fritzing-app-CD-498.orig/phoenix.pro	2020-04-05 16:34:50.540537495 -0600
++++ fritzing-app-CD-498/phoenix.pro	2020-04-05 16:35:10.763538142 -0600
+@@ -166,7 +166,7 @@
+ RESOURCES += phoenixresources.qrc
+ 
+ # Disable this if you have (and want) libgit2 dynamically
+-LIBGIT_STATIC = true
++LIBGIT_STATIC = false
+ include(pri/libgit2detect.pri)
+ 
+ include(pri/boostdetect.pri)
