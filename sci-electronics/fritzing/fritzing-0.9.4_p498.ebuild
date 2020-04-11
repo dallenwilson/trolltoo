@@ -42,6 +42,7 @@ DOCS="README.md"
 
 PATCHES=(
 	"${FILESDIR}/disable-static-libgit2.patch"
+	"${FILESDIR}/0.9.4_p498-update-libgit2-check.patch"
 )
 
 src_prepare() {
