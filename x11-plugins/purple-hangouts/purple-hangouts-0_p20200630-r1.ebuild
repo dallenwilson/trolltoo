@@ -8,11 +8,11 @@ inherit toolchain-funcs
 DESCRIPTION="Hangouts Plugin for libpurple"
 HOMEPAGE="https://bitbucket.org/EionRobb/purple-hangouts"
 
-#COMMIT_ID="3f7d89bf9ce2bf596aca4b8340c8623fe282f6b1"
-COMMIT_ID="3f7d89bf9ce2"
-SRC_URI="https://bitbucket.org/EionRobb/purple-hangouts/get/${COMMIT_ID}.tar.gz -> ${P}.tar.gz"
+COMMIT="5db1007d9ae740c59c363a8918d658289069e675"
+SRC_URI="https://github.com/EionRobb/purple-hangouts/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
+
 KEYWORDS="~amd64"
-S="${WORKDIR}/EionRobb-${PN}-${COMMIT_ID}"
+S="${WORKDIR}/${PN}-${COMMIT}"
 
 LICENSE="GPL-3+"
 SLOT="0"
