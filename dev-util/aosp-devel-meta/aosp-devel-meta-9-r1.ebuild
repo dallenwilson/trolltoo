@@ -43,5 +43,5 @@ RDEPEND="
 	x11-base/xorg-proto
 	x11-libs/libGLw
 	x11-libs/libX11
-	x11-libs/wxGTK:3.0
+	=x11-libs/wxGTK-3.0.4-r302
 "

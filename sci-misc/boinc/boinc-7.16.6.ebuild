@@ -18,7 +18,7 @@ RESTRICT="mirror"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE="X cuda curl_ssl_gnutls curl_ssl_libressl +curl_ssl_openssl"
 
 REQUIRED_USE="^^ ( curl_ssl_gnutls curl_ssl_libressl curl_ssl_openssl ) "
