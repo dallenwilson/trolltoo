@@ -1,0 +1,3 @@
+CFLAGS="-march=znver2 -O2 -pipe -fomit-frame-pointer -fno-plt -fno-stack-protector -ftree-vectorize -s"
+CXXFLAGS="-march=znver2 -O2 -pipe -fomit-frame-pointer -fno-plt -fno-stack-protector -ftree-vectorize -s -Wno-pedantic -Wno-unused-result -Wno-unused-function -Wno-unused-variable -Wno-unused-but-set-variable -Wno-deprecated-declarations -Wno-return-type -Wno-parentheses -Wno-misleading-indentation -Wno-attributes -Wno-subobject-linkage -Wno-ignored-attributes -Wno-ignored-attributes -Wno-address -Wno-dangling-else -Wno-class-memaccess -Wno-invalid-offsetof -Wno-packed-not-aligned"
+LDFLAGS="-Wl,-O2 -Wl,--as-needed -Wl,--sort-common -Wl,--strip-debug -flto"
