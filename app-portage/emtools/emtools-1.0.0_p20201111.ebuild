@@ -3,7 +3,7 @@
 
 EAPI=7
 
-COMMIT="05e7e038189cb1969abc10efceda384ac29bd924"
+COMMIT="6d230dbe7b451c5a9e6d5edb40570e0c424f71b8"
 
 DESCRIPTION="D. Wilson's collection of bash scripts for managing his Gentoo system(s)"
 HOMEPAGE="https://github.com/dallenwilson/emtools"
