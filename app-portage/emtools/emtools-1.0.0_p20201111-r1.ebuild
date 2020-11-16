@@ -16,6 +16,7 @@ IUSE=""
 
 DEPEND="
 	app-portage/layman
+	app-portage/gentoolkit
 	sys-kernel/genkernel
 	app-portage/eix
 	sys-boot/grub
