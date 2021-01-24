@@ -10,7 +10,7 @@ inherit desktop xdg-utils
 DESCRIPTION="Official launcher for Minecraft"
 HOMEPAGE="https://minecraft.net"
 SRC_URI="https://launcher.mojang.com/download/linux/x86_64/minecraft-launcher_${PV}.tar.gz
-		https://minecraft.net/android-icon-192x192.png -> minecraft-launcher.png"
+		https://launcher.mojang.com/download/minecraft-launcher.svg -> minecraft-launcher.svg"
 
 LICENSE="Minecraft-clickwrap-EULA"
 SLOT="0"
@@ -49,7 +49,7 @@ src_install() {
 
 	fperms +x /opt/minecraft-launcher/minecraft-launcher
 
-	doicon -s 192 "${DISTDIR}"/minecraft-launcher.png
+	doicon -s 192 "${DISTDIR}"/minecraft-launcher.svg
 
 	dosym "../../opt/minecraft-launcher/minecraft-launcher" "/usr/bin/minecraft-launcher"
 	make_desktop_entry minecraft-launcher Minecraft minecraft-launcher Game
