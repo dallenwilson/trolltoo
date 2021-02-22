@@ -5,7 +5,7 @@ EAPI=7
 
 inherit linux-mod
 
-COMMIT="818ecc836a55b5b1c08da2bfb03fce5d67920b9e"
+COMMIT="7a11dc9a5f387d07b47542a311e5eb5941d4829d"
 
 DESCRIPTION="ReatlTek 8821ce wifi driver"
 HOMEPAGE="https://github.com/tomaspinho/rtl8821ce/"
@@ -20,6 +20,7 @@ RESTRICT="bindist"
 COMMON="kernel_linux? ( >=sys-libs/glibc-2.6.1 )"
 DEPEND="
 	${COMMON}
+	dev-util/dwarves
 	kernel_linux? (	virtual/linux-sources virtual/pkgconfig	)
 	"
 RDEPEND="${COMMON}"
