@@ -5,4 +5,7 @@
     <email>dwjwilson@lavabit.com</email>
     <name>Dallen Wilson</name>
   </maintainer>
+  <use>
+    <flag name="atomicparsley">Enable command line program for manipulating iTunes-style metadata in MPEG4 files.</flag>
+  </use>
 </pkgmetadata>
