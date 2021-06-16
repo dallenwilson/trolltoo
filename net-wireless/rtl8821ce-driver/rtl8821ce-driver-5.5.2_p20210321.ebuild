@@ -20,7 +20,7 @@ RESTRICT="bindist"
 COMMON="kernel_linux? ( >=sys-libs/glibc-2.6.1 )"
 DEPEND="
 	${COMMON}
-	dev-util/dwarves
+	dev-util/pahole
 	kernel_linux? (	virtual/linux-sources virtual/pkgconfig	)
 	"
 RDEPEND="${COMMON}"
