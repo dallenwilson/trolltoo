@@ -16,7 +16,7 @@ RDEPEND="x11-libs/gtk+:2"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
-PATCHES=( "${FILESDIR}"/${P}-makefile.patch )
+PATCHES=( "${FILESDIR}"/Makefile.patch )
 
 src_install() {
 	emake DESTDIR="${D}" install
