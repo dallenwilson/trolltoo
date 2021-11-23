@@ -1,0 +1,14 @@
+--- gstm-1.3.7/gstm.desktop	2020-03-27 14:41:00.000000000 -0600
++++ gstm-1.3.7/gstm.desktop.new	2021-11-23 08:19:07.407991490 -0700
+@@ -1,5 +1,4 @@
+ [Desktop Entry]
+-Encoding=UTF-8
+ Name=gSTM
+ GenericName=gSTM
+ Comment=Manage SSH tunnel connections
+@@ -7,4 +6,4 @@
+ Icon=gSTM
+ Terminal=false
+ Type=Application
+-Categories=Application;GTK;GNOME;Network;
++Categories=Network;RemoteAccess;

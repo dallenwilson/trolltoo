@@ -16,9 +16,12 @@ DEPEND="
 	>=x11-libs/gtk+-3.24.1
 	dev-libs/libxml2
 	>=dev-util/intltool-0.35.0
+	>=dev-libs/libappindicator-12
 	"
 RDEPEND="
 	net-misc/openssh
 	sys-apps/util-linux
 	"
 BDEPEND=""
+
+PATCHES="${FILESDIR}/gstm.desktop.patch"
