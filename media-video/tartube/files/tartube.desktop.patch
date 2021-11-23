@@ -1,0 +1,9 @@
+--- tartube-2.3.332/pack/tartube.desktop	2021-08-08 07:04:37.000000000 -0600
++++ tartube-2.3.332/pack/tartube.desktop.new	2021-11-22 19:04:33.627732581 -0700
+@@ -1,6 +1,5 @@
+ [Desktop Entry]
+ Name=Tartube
+-Version=2.3.332
+ Exec=tartube
+ Icon=tartube
+ Type=Application

@@ -42,6 +42,8 @@ DOCS=(
 	README.rst
 )
 
+PATCHES=( "${FILESDIR}"/tartube.desktop.patch )
+
 src_prepare() {
 	export TARTUBE_PKG_STRICT=1
 
