@@ -1,7 +1,7 @@
 # Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="Displays the system activity in a very special way ;-)"
 HOMEPAGE="https://sourceforge.net/projects/hotbabe"
@@ -19,7 +19,7 @@ DEPEND="${RDEPEND}
 PATCHES=( "${FILESDIR}"/Makefile.patch )
 
 src_install() {
-	emake DESTDIR="${D}" install
+	emake VERSION="${PVR}" DESTDIR="${D}" install
 
 	newman ${PN}.1 ${PN}.6
 }
