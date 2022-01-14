@@ -24,9 +24,9 @@ src_prepare() {
 }
 
 src_compile() {
-	# Disable btop optimization flags, since we have our flags in CXXFLAGS
+	# Copy our CXXFLAGS to OPTFLAGS so they get used, since btop does not load system CXXFLAGS
 	emake \
-		OPTFLAGS=""
+		OPTFLAGS="${CXXFLAGS}"
 }
 
 src_install() {
