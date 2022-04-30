@@ -6,7 +6,7 @@ EAPI=7
 inherit toolchain-funcs
 
 DESCRIPTION="Hangouts Plugin for libpurple"
-HOMEPAGE="https://bitbucket.org/EionRobb/purple-hangouts"
+HOMEPAGE="https://github.com/EionRobb/purple-hangouts"
 
 COMMIT="55b9f01d040b240b794700f44d9c21a6cb51251e"
 SRC_URI="https://github.com/EionRobb/purple-hangouts/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
