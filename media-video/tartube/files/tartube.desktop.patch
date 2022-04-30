@@ -3,7 +3,7 @@
 @@ -1,6 +1,5 @@
  [Desktop Entry]
  Name=Tartube
--Version=2.3.332
+-Version=2.4.0
  Exec=tartube
  Icon=tartube
  Type=Application
