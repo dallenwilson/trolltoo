@@ -1,0 +1,11 @@
+--- anjuta-3.34.0/configure.ac.orig	2022-04-30 08:37:42.710749762 -0600
++++ anjuta-3.34.0/configure.ac	2022-04-30 08:36:55.806888904 -0600
+@@ -90,7 +90,7 @@
+    AC_MSG_ERROR([C++ Compiler required to compile Anjuta]))
+ AM_PROG_CC_C_O
+ 
+-GNOME_COMPILE_WARNINGS([yes])
++dnl GNOME_COMPILE_WARNINGS([yes])
+ AM_CFLAGS="$AM_CFLAGS $WARN_CFLAGS"
+ AM_CXXFLAGS="$AM_CXXFLAGS $WARN_CXXFLAGS"
+ 
