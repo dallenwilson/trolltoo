@@ -5,7 +5,7 @@ EAPI=7
 
 inherit linux-mod
 
-COMMIT="be733dc86781c68571650b395dd0fa6b53c0a039"
+COMMIT="812fb928f05980d13a3c58a62c8762d3aa21c033"
 
 DESCRIPTION="ReatlTek 8821ce wifi driver"
 HOMEPAGE="https://github.com/tomaspinho/rtl8821ce/"
