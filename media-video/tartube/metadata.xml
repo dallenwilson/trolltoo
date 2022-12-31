@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <maintainer type="person">
-    <email>dwjwilson@lavabit.com</email>
-    <name>Dallen Wilson</name>
-  </maintainer>
-  <use>
-    <flag name="atomicparsley">Enable command line program for manipulating iTunes-style metadata in MPEG4 files.</flag>
-  </use>
+	<maintainer type="person">
+		<email>dwjwilson@lavabit.com</email>
+		<name>Dallen Wilson</name>
+	</maintainer>
+	<use>
+		<flag name="atomicparsley">Enable command line program for manipulating iTunes-style metadata in MPEG4 files.</flag>
+	</use>
+	<upstream>
+		<remote-id type="github">axcore/tartube</remote-id>
+	</upstream>
 </pkgmetadata>

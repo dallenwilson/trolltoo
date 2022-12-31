@@ -1,9 +1,11 @@
 # Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{6,7,8,9} )
+#DISTUTILS_USE_PEP517=setuptools
+
+PYTHON_COMPAT=( python3_{8,9,10,11} )
 
 inherit xdg distutils-r1
 
@@ -41,8 +43,6 @@ DOCS=(
 	CHANGES
 	README.rst
 )
-
-PATCHES=( "${FILESDIR}"/tartube.desktop.patch )
 
 src_prepare() {
 	export TARTUBE_PKG_STRICT=1
