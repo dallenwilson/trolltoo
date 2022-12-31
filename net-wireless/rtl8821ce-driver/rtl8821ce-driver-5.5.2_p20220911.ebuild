@@ -1,7 +1,7 @@
 # Copyright 2018-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit linux-mod
 
@@ -9,7 +9,7 @@ COMMIT="50c1b120b06a3b0805e23ca9a4dbd274d74bb305"
 
 DESCRIPTION="ReatlTek 8821ce wifi driver"
 HOMEPAGE="https://github.com/tomaspinho/rtl8821ce/"
-SRC_URI="https://github.com/tomaspinho/rtl8821ce/archive/${COMMIT}.tar.gz"
+SRC_URI="https://github.com/tomaspinho/rtl8821ce/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -17,7 +17,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE="kernel_linux"
 RESTRICT="bindist"
 
-COMMON="kernel_linux? ( >=sys-libs/glibc-2.6.1 )"
+COMMON="kernel_linux? ( >=sys-libs/glibc-2.36 )"
 DEPEND="
 	${COMMON}
 	dev-util/pahole
@@ -68,7 +68,8 @@ pkg_preinst() {
 pkg_postinst() {
 	linux-mod_pkg_postinst
 	elog "This ebuild will be removed from overlay trolltoo at some point after 2023-02-01."
-	elog "The in-kernel rtw88 driver's support for the 8821ce chipset has come a long way, and I no longer need to maintain an ebuild for this driver for my own use."
+	elog "The in-kernel rtw88 driver's support for the 8821ce chipset has come a long way,"
+	elog "and I no longer need to maintain an ebuild for this driver for my own use."
 }
 
 pkg_postrm() {

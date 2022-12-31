@@ -7,7 +7,7 @@ COMMIT="30af374bbc66c1e4e1b1b709ae9a09f9f6b8b089"
 
 DESCRIPTION="D. Wilson's collection of bash scripts for managing his Gentoo system(s)"
 HOMEPAGE="https://github.com/dallenwilson/emtools"
-SRC_URI="https://github.com/dallenwilson/emtools/archive/${COMMIT}.tar.gz"
+SRC_URI="https://github.com/dallenwilson/emtools/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
