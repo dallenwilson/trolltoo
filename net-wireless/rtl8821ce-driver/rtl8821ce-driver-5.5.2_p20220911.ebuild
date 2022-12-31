@@ -5,7 +5,7 @@ EAPI=7
 
 inherit linux-mod
 
-COMMIT="812fb928f05980d13a3c58a62c8762d3aa21c033"
+COMMIT="50c1b120b06a3b0805e23ca9a4dbd274d74bb305"
 
 DESCRIPTION="ReatlTek 8821ce wifi driver"
 HOMEPAGE="https://github.com/tomaspinho/rtl8821ce/"
@@ -67,6 +67,8 @@ pkg_preinst() {
 
 pkg_postinst() {
 	linux-mod_pkg_postinst
+	elog "This ebuild will be removed from overlay trolltoo at some point after 2023-02-01."
+	elog "The in-kernel rtw88 driver's support for the 8821ce chipset has come a long way, and I no longer need to maintain an ebuild for this driver for my own use."
 }
 
 pkg_postrm() {
