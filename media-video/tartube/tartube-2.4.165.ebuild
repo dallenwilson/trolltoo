@@ -28,7 +28,7 @@ IUSE="+atomicparsley +ffmpeg"
 RDEPEND="
 	dev-python/pygobject[${PYTHON_USEDEP}]
 	dev-python/requests[${PYTHON_USEDEP}]
-	net-misc/youtube-dl
+	net-misc/yt-dlp
 	x11-themes/adwaita-icon-theme
 	atomicparsley? (
 		media-video/atomicparsley
