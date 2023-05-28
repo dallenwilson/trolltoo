@@ -3,7 +3,7 @@
 
 EAPI=7
 
-COMMIT="30af374bbc66c1e4e1b1b709ae9a09f9f6b8b089"
+COMMIT="ffa5e620a9369dfe4e06e2551f2de4bdab1a21c6"
 
 DESCRIPTION="D. Wilson's collection of bash scripts for managing his Gentoo system(s)"
 HOMEPAGE="https://github.com/dallenwilson/emtools"
@@ -15,7 +15,7 @@ KEYWORDS="amd64 x86"
 IUSE=""
 
 DEPEND="
-	app-portage/layman
+	app-eselect/eselect-repository
 	app-portage/gentoolkit
 	sys-kernel/genkernel
 	app-portage/eix
