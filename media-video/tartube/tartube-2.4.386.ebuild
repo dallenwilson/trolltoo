@@ -3,9 +3,13 @@
 
 EAPI=8
 
+# When tartube updates to actually use PEP517 properlly,
+# Or I figure out how to force PE517-mode to install icons to
+# the proper directory, this can be enabled.
+# Until then, we'll live with the pkgcheck warnings about it.
 #DISTUTILS_USE_PEP517=setuptools
 
-PYTHON_COMPAT=( python3_{8,9,10,11} )
+PYTHON_COMPAT=( python3_{10,11,12} )
 
 inherit xdg distutils-r1
 
