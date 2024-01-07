@@ -1,0 +1,16 @@
+DEFINED_PHASES=compile install postinst postrm preinst prepare setup
+DEPEND=kernel_linux? ( >=sys-libs/glibc-2.36 ) dev-util/pahole kernel_linux? ( virtual/linux-sources virtual/pkgconfig ) kernel_linux? ( sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= ) ) kernel_linux? ( virtual/linux-sources virtual/libelf )
+DESCRIPTION=ReatlTek 8821ce wifi driver
+EAPI=8
+HOMEPAGE=https://github.com/tomaspinho/rtl8821ce/
+INHERIT=linux-mod
+IUSE=kernel_linux dist-kernel
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=kernel_linux? ( >=sys-libs/glibc-2.36 ) kernel_linux? ( sys-apps/kmod[tools] dist-kernel? ( virtual/dist-kernel:= ) )
+REQUIRED_USE=kernel_linux
+RESTRICT=bindist
+SLOT=0
+SRC_URI=https://github.com/tomaspinho/rtl8821ce/archive/50c1b120b06a3b0805e23ca9a4dbd274d74bb305.tar.gz -> rtl8821ce-driver-5.5.2_p20220911.tar.gz
+_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0	linux-info	c4f1201b96a8a2c1f3b86cc8b2c71c91	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	linux-mod	65030ccb60b8a236bc29c8caa76e3815
+_md5_=6fb96c99a88355569db6881bba90859f

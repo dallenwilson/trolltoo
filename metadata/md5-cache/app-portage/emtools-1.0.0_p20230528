@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=app-eselect/eselect-repository app-portage/gentoolkit sys-kernel/genkernel app-portage/eix sys-boot/grub
+DESCRIPTION=D. Wilson's collection of bash scripts for managing his Gentoo system(s)
+EAPI=7
+HOMEPAGE=https://github.com/dallenwilson/emtools
+KEYWORDS=amd64 x86
+LICENSE=GPL-3
+RDEPEND=app-eselect/eselect-repository app-portage/gentoolkit sys-kernel/genkernel app-portage/eix sys-boot/grub
+SLOT=0
+SRC_URI=https://github.com/dallenwilson/emtools/archive/ffa5e620a9369dfe4e06e2551f2de4bdab1a21c6.tar.gz -> emtools-1.0.0_p20230528.tar.gz
+_md5_=126eb231abd6bd4604a8fb772544542f

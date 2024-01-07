@@ -1,0 +1,14 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=compile install prepare
+DEPEND=dev-libs/glib:2 dev-libs/json-glib dev-libs/protobuf-c:= net-im/pidgin sys-libs/zlib
+DESCRIPTION=Hangouts GoogleChat for libpurple
+EAPI=7
+HOMEPAGE=https://github.com/EionRobb/purple-googlechat
+INHERIT=toolchain-funcs
+KEYWORDS=~amd64
+LICENSE=GPL-3+
+RDEPEND=dev-libs/glib:2 dev-libs/json-glib dev-libs/protobuf-c:= net-im/pidgin sys-libs/zlib
+SLOT=0
+SRC_URI=https://github.com/EionRobb/purple-googlechat/archive/1e89ad97e0927025d0329e285436616d55baaf42.tar.gz -> purple-googlechat-0_p20220301.tar.gz
+_eclasses_=toolchain-funcs	513c31b3346458ed1f3878b57da6d61c	multilib	c19072c3cd7ac5cb21de013f7e9832e0
+_md5_=d639aa782b4d15a60330d7fbce504f2f
