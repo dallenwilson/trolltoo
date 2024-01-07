@@ -3,7 +3,7 @@
 
 EAPI=7
 
-COMMIT="ffa5e620a9369dfe4e06e2551f2de4bdab1a21c6"
+COMMIT="bb16da2ee354a0b3175a7d68691060deb07d3226"
 
 DESCRIPTION="D. Wilson's collection of bash scripts for managing his Gentoo system(s)"
 HOMEPAGE="https://github.com/dallenwilson/emtools"
@@ -12,7 +12,6 @@ SRC_URI="https://github.com/dallenwilson/emtools/archive/${COMMIT}.tar.gz -> ${P
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="amd64 x86"
-IUSE=""
 
 DEPEND="
 	app-eselect/eselect-repository
@@ -22,7 +21,6 @@ DEPEND="
 	sys-boot/grub
 	"
 RDEPEND="${DEPEND}"
-BDEPEND=""
 
 S="${WORKDIR}/emtools-${COMMIT}"
 
