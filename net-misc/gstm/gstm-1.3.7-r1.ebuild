@@ -10,7 +10,6 @@ SRC_URI="https://github.com/dallenwilson/gstm/releases/download/${PV}/${P}.tar.g
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE=""
 
 DEPEND="
 	>=x11-libs/gtk+-3.24.1
@@ -22,6 +21,5 @@ RDEPEND="
 	net-misc/openssh
 	sys-apps/util-linux
 	"
-BDEPEND=""
 
 PATCHES="${FILESDIR}/gstm.desktop.patch"
